@@ -12,6 +12,13 @@
             font-size: 32px;
         }
     }
+    .carousel {
+        &__inner {
+            img {
+                max-width: 700px;
+            }
+        }
+    }
 }
 
 @media (max-width: 991px) {
@@ -104,6 +111,22 @@
         min-height: 550px;
         padding: 50px 0 50px 0;
     }
+    .carousel {
+        &__inner {
+            img {
+                max-width: 600px;
+            }
+        }
+        .prev {
+            display: none;
+        }
+        .next {
+            display: none;
+        }
+        .tns-nav {
+            display: block;
+        }
+    }
 }
 
 @media (max-width: 767px) {
@@ -184,6 +207,14 @@
         padding: 50px 0 50px 0;
         &__descr {
             font-size: 16px;
+        }
+    }
+    .carousel {
+        padding: 40px 0;
+        &__inner {
+            img {
+                max-width: 400px;
+            }
         }
     }
 }
@@ -276,5 +307,13 @@
         margin-top: 26px;
         width: 260px;
         height: 200px;
+    }
+    .carousel {
+        padding: 30px 0;
+        &__inner {
+            img {
+                max-width: 250px;
+            }
+        }
     }
 }
